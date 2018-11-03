@@ -1,5 +1,6 @@
 # deploy function
 deploy:
+	go mod vendor
 	gcloud alpha functions deploy ping \
 		--entry-point F \
 		--memory 128MB \
